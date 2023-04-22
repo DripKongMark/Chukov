@@ -177,24 +177,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.onTop {
-    position: fixed;
-    z-index: 9999;
-    bottom: 0%;
-    right: 0%;
-    background: rgb(29,28,34);
-    opacity: .9;
-    color: rgb(255,213,11);
-    padding: 10px;
-    margin: 5px 15px 15px 5px;
-    border: 1mm ridge;
-    border-color: rgb(229,159,81);
-    border-radius: 10px;
-    -webkit-transition: all 0.5s ease;;
-    -moz-transition: all 0.5s ease;;
-    -o-transition: all 0.5s ease;;
-    transition: all 0.5s ease;
-}
+
 
 
 /*ACCORDION*/
