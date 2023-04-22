@@ -1,0 +1,102 @@
+.peoplereplies{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.body__replie{
+    display: flex;
+    flex-basis:content;
+    flex-wrap: wrap;
+}
+
+.text__replie{
+    height: auto;
+    max-width: 700px;
+    position: relative;
+    padding: 10px;
+    background: rgb(51,51,51);
+    border-radius: 10px;
+    vertical-align:bottom;
+    margin: 0 10px 10px 10px;
+}
+
+.seventh__replie{
+    max-width: 1000px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image1{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 100%;
+    background: url(img/sha0_lin.jpg);
+    background-size: 100%;
+    background-position: center;
+    
+    
+}
+
+.image2{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 100%;
+    background: url(img/ThisIsViskas.jpg);
+    background-size: 100%;
+    background-position: center;
+    
+}
+
+.image3{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 100%;
+    background: url(img/Shark.jpg);
+    background-size: 100%;
+    background-position: center;
+    
+}
+
+.image4{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 100%;
+    background: url(img/BabaScript.jpg);
+    background-size: 100%;
+    background-position: center;
+    
+}
+
+.image5{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 100%;
+    background: url(img/Pogiloy\ Harden.jpg);
+    background-size: 100%;
+    background-position: center;
+    
+}
+
+.image6{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 100%;
+    background: url(img/GOD.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+@media screen and (max-width: 706px) {
+    .text__replie{
+        margin: 10px;
+    }
+}
