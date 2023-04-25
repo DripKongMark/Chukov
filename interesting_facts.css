@@ -35,6 +35,11 @@
     
 }
 
+.fourth__replie{
+    justify-content: center;
+    
+}
+
 @media screen and (max-width: 706px) {
     .text__replie{
         margin: 10px;
