@@ -13,7 +13,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
 <body>
-
+  <div class="onTop" onclick="scrollTopTop()"></div>
     <div class="navbar">
         <div class="burger-menu__inner">
             <span></span><span></span><span></span>
@@ -212,9 +212,18 @@
             </div>
       </div>
 
-<div><a id="idTop"></a></div>
-  <div><a class="onTop" href="#">☭</a></div> 
-</div>
+      <script>
+        window.addEventListener('scroll', function(){
+          var scroll = document.querySelector('.onTop');
+          scroll.classList.toggle("active", window.scrollY>500)
+        })
+          function scrollTopTop(){
+            window.scrollTo({
+              top:0,
+              behavior:'smooth'
+            })
+          }
+      </script>
 
 <div class="footer">
   <h2>All rights are reserved</h2>
