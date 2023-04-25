@@ -1,7 +1,3 @@
-.main{
-margin-left: 280px;
-}
-
 .peoplereplies{
     display: flex;
     flex-flow: column nowrap;
