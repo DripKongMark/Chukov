@@ -76,6 +76,11 @@ body {
     flex-wrap: wrap;
 }
 
+.p a{
+    text-decoration: none;
+    color: rgb(255,213,11)
+}
+
 
 /* Column container */
 .row {  
@@ -177,7 +182,43 @@ html {
     scroll-behavior: smooth;
 }
 
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 100%;
+    background: #7ac9f9;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
+  }
 
+.onTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background: url(img/toP.jpg);
+    background-size: cover;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    border: 1mm ridge;
+    border-color: rgb(229,159,81);
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease;;
+    -moz-transition: all 0.5s ease;;
+    -o-transition: all 0.5s ease;;
+    transition: all 0.5s ease;
+}
+
+.onTop.active{
+    visibility: visible;
+    opacity: 1;
+}
 
 
 /*ACCORDION*/
