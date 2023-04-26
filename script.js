@@ -191,7 +191,20 @@ $(document).ready(function() {
   });
 });
 
+const showOnPx = 100;
+const backToTopButton = document.querySelector(".back-to-top")
 
+const scrollContainer = () => {
+  return document.documentElement || document.body;
+};
+
+document.addEventListener("scroll", () => {
+  if (scrollContainer().scrollTop > showOnPx) {
+    backToTopButton.classList.remove("hidden")
+  } else {
+    backToTopButton.classList.add("hidden")
+  }
+})
 
 
 class ItcAccordion {
@@ -401,3 +414,17 @@ function table_add() {
 	new_tr.innerHTML = (`<td>${name_txt}</td><td>${amount_numb}</td><td>${obl_txt}</td>`); // заполнили ёе
 	table.appendChild(new_tr); // добавили строку в таблицу на странице
   }
+
+//   var nick_txt = nick_in.value;
+//   var amount_numb = amount.value;
+//   if (amount_numb > 999999) {
+//     alert('Количество работ слишком велико');
+//   } else if (nick_txt == '') {
+//     alert('Проверьте имя, оно не может быть пустым');
+//   } else if (amount_numb == '') {
+//     alert('Поле количество работ заполнено не корректо, проверьте его пожалуйста')
+//   } else {
+//     table_numb += 1;
+//     var new_tr = document.createElement("tr");
+//     new_tr.innerHTML = (`<td>${table_numb}</td><td>${nick_txt}</td><td>${amount_numb}</td>`);
+//     table.appendChild(new_tr);
