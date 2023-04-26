@@ -141,7 +141,7 @@ a.button {
 }
 
 a.button:hover {
-    color: rgb(8, 0, 78);
+    color: green;
     background: rgb(164,224,236);
     /* rgb(221,203,142) */
     border-color: rgb(199, 155, 9);
