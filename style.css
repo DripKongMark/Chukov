@@ -187,6 +187,10 @@ a.button:hover {
     /* box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3); */
 }
 
+text__item a:visible{
+    color: rgb(164,224,236);
+}
+
 .text__item a:Visited{
     color: rgb(164,224,236);
     /* rgb(255,213,11) */
