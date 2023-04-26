@@ -141,7 +141,7 @@ a.button {
 }
 
 a.button:hover {
-    color: green;
+    color: black;
     background: rgb(164,224,236);
     /* rgb(221,203,142) */
     border-color: rgb(199, 155, 9);
@@ -187,9 +187,9 @@ a.button:hover {
     /* box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3); */
 }
 
-text__item a:hover{
-    color: green;
-}
+    text__item a:visible{
+        color: rgb(164,224,236);
+    }
 
 .text__item a:Visited{
     color: rgb(164,224,236);
@@ -201,8 +201,6 @@ text__item a:hover{
     color: white;
     size:35px;
 }
-
-
 
 @media screen and (max-width: 706px) {
     .text__replie{
@@ -257,8 +255,21 @@ html {
 /*ACCORDION*/
 .accordion{
     max-width: 40rem; 
-    margin: 5rem auto;
+    
 }
+
+.accordion.accordion {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
 .accordion__item {
 width: 700px;
 margin-bottom: 0.5rem;
@@ -378,7 +389,6 @@ display: none;
     .sidebar{
         display: none;
     }
-    
 }
 
 @media screen and (max-width: 930px) {
@@ -388,6 +398,13 @@ display: none;
     }
     .ascontent{
         display: flex;
+    }
+}
+
+@media screen and (max-width: 913px){
+    .accordion{
+        margin: 15px 30px;
+        padding: 10px;
     }
 }
 
@@ -663,12 +680,27 @@ display: none;
         margin: 0rem auto;
     }
     .accordion{
-        margin: 0 auto;
-        padding: 0;
+        margin: 25px 90px;
+        padding: 20px;
     }
     .accordion__header{
        margin: 0rem auto;      
     }
+}
+
+@media screen and (max-width: 821px){
+    .accordion{
+        margin: 25px 40px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 769px){
+       .accordion{
+            margin: 25px 15px;
+            padding: 20px;
+       } 
+
 }
 
 @media screen and (max-width: 400px) {
