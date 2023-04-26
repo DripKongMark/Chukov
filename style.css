@@ -181,13 +181,13 @@ a.button:hover {
 }
 
 .text__item a:Visited{
-    color: white;
+    color: rgb(164,224,236);
     /* rgb(255,213,11) */
     size:55px;
 }
 
 .text__item a:active{
-    color: white;
+    color: rgb(164,224,236);
     size:35px;
 }
 
