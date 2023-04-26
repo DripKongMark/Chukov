@@ -35,8 +35,10 @@ button{
 .arrow {
   width: 40px;
   height: 40px;
-  border-top: 5px solid rgb(255,213,11);
-  border-right: 5px solid rgb(255,213,11);
+  border-top: 5px solid rgb(164,224,236);
+  /* rgb(255,213,11) */
+  border-right: 5px solid rgb(164,224,236);
+  /* rgb(255,213,11) */
   margin-right: 20px;
 }
 /* правая галочка кнопка */
