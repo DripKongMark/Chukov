@@ -193,6 +193,11 @@ a.button:hover {
     size:55px;
 }
 
+.text__item a:active{
+    color: white;
+    size:35px;
+}
+
 
 
 @media screen and (max-width: 706px) {
