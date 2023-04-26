@@ -8,7 +8,6 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic/Playfair+Display:400,700&subset=latin,cyrillic">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="table.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 </head>
@@ -33,7 +32,7 @@
   <h1>Таблица</h1>
 </div>
     <div class="main">
-        <table id="table" border="2" bordercolor="#cc9f13">
+        <table id="table" border="2" bordercolor="#adadad">
             <caption>Таблица студентов и их работ</caption>
             <tr> 
             <th>ФИО</th> 
@@ -89,7 +88,7 @@
     <script>
       window.addEventListener('scroll', function(){
         var scroll = document.querySelector('.onTop');
-        scroll.classList.toggle("active", window.scrollY>500)
+        scroll.classList.toggle("active", window.scrollY>100)
       })
         function scrollTopTop(){
           window.scrollTo({
