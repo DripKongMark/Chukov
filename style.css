@@ -68,6 +68,7 @@ body {
     color: rgb(255,213,11);
     text-decoration: none;
 }
+
 /* burger-menu*/
 .burger-menu{
     display: block;
@@ -78,7 +79,7 @@ body {
 
 .p a{
     text-decoration: none;
-    color: rgb(255,213,11)
+    color: rgb(255,213,11);
 }
 
 
@@ -161,7 +162,7 @@ a.button:hover {
     flex-wrap: wrap;
 }
 
-.text__item{
+.text__item {
     height: auto;
     max-width: 700px;
     position: relative;
@@ -170,6 +171,16 @@ a.button:hover {
     border-radius: 10px;
     vertical-align:bottom;
     margin: 0 10px 10px 10px;
+}
+
+.text__item a:Visited{
+    color: rgb(255,213,11);
+    size:55px;
+}
+
+.text__item a:active{
+    color: #white;
+    size:35px;
 }
 
 @media screen and (max-width: 706px) {
@@ -203,6 +214,7 @@ html {
     height: 50px;
     background: url(img/toP.jpg);
     background-size: cover;
+    z-index: 666;
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
@@ -289,7 +301,6 @@ display: none;
 /* ⸸ */
 /* Footer */
 .footer {
-    position: bottom;
     left: 0;
 	bottom: 0;
 	width: 100%;
