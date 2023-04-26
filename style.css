@@ -193,10 +193,7 @@ a.button:hover {
     size:55px;
 }
 
-.text__item a:active{
-    color: rgb(164,224,236);
-    size:35px;
-}
+
 
 @media screen and (max-width: 706px) {
     .text__replie{
