@@ -144,7 +144,7 @@ a.button:hover {
     padding: 30px;
     max-width: 1000px;
     margin: 0 auto;
-    color: rgb(255,213,11) /*#FFB174*/
+    color: white; /*#FFB174*/
     
 }
 
