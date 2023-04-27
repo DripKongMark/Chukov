@@ -12,7 +12,367 @@
   align-items: center;
   height: 600px;
 }
+/* тут я ставлю сюда на 1 место в цепо.wrapper{ /* контейнер сия шедевра */
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* эту херню лучше не трогать , вообще не трогать , СЕКРЕТНО тут инфа о том что эта херня флекс бокс и его настройка */
+.wrapper-slider{ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:center;
+  align-items: center;
+  height: 600px;
+}
 /* тут я ставлю сюда на 1 место в цепочки flex бокса */
+.btn-prev{
+  order: 1;
+}
+/* тут я ставлю туда на последнее место в флекс бокс цепочке */
+.btn-next{
+  order: 3;
+}
+/* Slider */
+/* Тут отключение стиля у кнопки */
+button{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+/* Галочка кнопка , её можно удоптировать для молее маленьких устройст укорачивая width и height */
+.arrow {
+  width: 40px;
+  height: 40px;
+  border-top: 5px solid rgb(164,224,236);
+  /* rgb(255,213,11) */
+  border-right: 5px solid rgb(164,224,236);
+  /* rgb(255,213,11) */
+  margin-right: 20px;
+}
+/* правая галочка кнопка */
+.arrow-right {
+  transform: rotate(45deg);
+}
+/* левая галочка кнопка */
+.arrow-left {
+  transform: rotate(-135deg);
+}
+/* по сути это то , что за ним , ЕГО НЕ ТРОГАТЬ ВООБЩЕ ОН НИ ЗАЧТО В АДАПТИВЕ НЕ ВЛИЯЕТ ААААА */
+.slider-container{
+  overflow: hidden;
+  order: 2;
+  margin: 50px 20px;
+}
+/* тут хз , его можно легооооонечко потрогать */
+.slider-track{
+  display: flex;
+  background-color: yellow;
+  transition: .2s;
+}
+/* окошко , оно и адаптируется , на ним можно ставить эксперементы */
+.slider-item{
+  height: 400px;
+  width: 800px;
+}
+/* ТУТА КАРТИНОЧКИ УХХХХ ДААААААААА УРА КАРТИНОЧКИ , ВЫ ЧТО ДУМАЛИ В СЛАЙДЕРЕ НЕТ ПИКЧ АХХАХАА */
+.slider-item:nth-child(1){ background-image:url(./Chucov/1.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(2){ background-image: url(./Chucov/2.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(3){ background-image:url(./Chucov/3.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(4){ background-image:url(./Chucov/4.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(5){ background-image: url(./Chucov/5.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(6){ background-image:url(./Chucov/6.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(7){ background-image:url(./Chucov/7.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(8){ background-image: url(./Chucov/8.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(9){ background-image:url(./Chucov/9.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(10){ background-image:url(./Chucov/10.jpg); background-size: 100% 100%;}
+.slider-item:nth-child(11){ background-image:url(./Chucov/11.jpg); background-size: 100% 100%;}
+/* по приколу оставил */
+.slider-buttons{
+  text-align: center;
+}
+
+@media screen and (max-width: 1281px) {
+  .wrapper{
+    width: 800px;
+  }
+  .slider-item{
+    height: 400px;
+    width: 800px;
+  }
+  .arrow{
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid rgb(255,213,11);
+    border-right: 5px solid rgb(255,213,11);
+  }
+  .btn-prev.slider-buttons{
+    width: 19px;
+    margin-right: 19px;
+  }
+  .btn-next.slider-buttons{
+    width: 19px;
+    margin-right: 28px;
+  }
+  .wrapper-slider{
+    height: 500px;
+    width: 800px;
+  }
+  .slider-item{
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .wrapper{
+    width: 600px;
+  }
+  .slider-item{
+    height: 330px;
+    width: 600px;
+  }
+  .arrow{
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid rgb(255,213,11);
+    border-right: 5px solid rgb(255,213,11);
+  }
+  .btn-prev.slider-buttons{
+    width: 19px;
+    margin-right: 19px;
+  }
+  .btn-next.slider-buttons{
+    width: 19px;
+    margin-right: 28px;
+  }
+  .wrapper-slider{
+    height: 450px;
+    width: 600px;
+  }
+  .slider-item{
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 913px) {
+  .wrapper{
+    width: 850px;
+  }
+  .slider-item{
+    height: 450px;
+    width: 850px;
+  }
+  .arrow{
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid rgb(255,213,11);
+    border-right: 5px solid rgb(255,213,11);
+  }
+  .btn-prev.slider-buttons{
+    width: 19px;
+    margin-right: 19px;
+  }
+  .btn-next.slider-buttons{
+    width: 19px;
+    margin-right: 28px;
+  }
+  .wrapper-slider{
+    height: 850px;
+    width: 850px;
+  }
+  .slider-item{
+    width: 850px;
+  }
+}
+
+@media screen and (max-width: 821px) {
+  .wrapper{
+    width:650px;
+  }
+  .slider-item{
+    height: 400px;
+    width: 650px;
+  }
+  .arrow{
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid rgb(255,213,11);
+    border-right: 5px solid rgb(255,213,11);
+  }
+  .btn-prev.slider-buttons{
+    width: 19px;
+    margin-right: 19px;
+  }
+  .btn-next.slider-buttons{
+    width: 19px;
+    margin-right: 28px;
+  }
+  .wrapper-slider{
+    height: 650px;
+    width: 650px;
+  }
+  .slider-item{
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 541px) {
+  .wrapper{
+    width: 450px;
+  }
+  .slider-item{
+    height: 300px;
+    width: 500px;
+  }
+  .arrow{
+    width: 25px;
+    height: 25px;
+    border-top: 5px solid rgb(255,213,11);
+    border-right: 5px solid rgb(255,213,11);
+  }
+  .btn-prev.slider-buttons{
+    width: 19px;
+    margin-right: 12px;
+  }
+  .btn-next.slider-buttons{
+    width: 19px;
+    margin-right: 23px;
+  }
+  .wrapper-slider{
+    height: 400px;
+    width: 450px;
+    margin-right: 40px;
+  }
+  .slider-item{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .wrapper{
+    width: 360px;
+  }
+  .slider-item{
+    height: 230px;
+    width: 370px;
+  }
+  .arrow{
+    width: 25px;
+    height: 25px;
+    border-top: 4px solid rgb(255,213,11);
+    border-right: 4px solid rgb(255,213,11);
+  }
+  .btn-prev.slider-buttons{
+    width: 7px;
+    margin-right: 7px;
+  }
+  .btn-next.slider-buttons{
+    width: 7px;
+    margin-right: 25px;
+  }
+  .wrapper-slider{
+    width: 370px;
+  }
+  .slider-item{
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .wrapper{
+    width: 350px;
+  }
+  .slider-item{
+    height: 200px;
+    width: 350px;
+  }
+  .arrow{
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid rgb(255,213,11);
+    border-right: 4px solid rgb(255,213,11);
+  }
+  .btn-prev.slider-buttons{
+    width: 5px;
+    margin-right: 5px;
+  }
+  .btn-next.slider-buttons{
+    width: 5px;
+    margin-right: 20px;
+  }
+  .wrapper-slider{
+    width: 350px;
+  }
+  .slider-item{
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .wrapper{
+    width: 300px;
+  }
+  .slider-item{
+    height: 200px;
+    width: 400px;
+  }
+  .arrow{
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid rgb(255,213,11);
+    border-right: 4px solid rgb(255,213,11);
+  }
+  .btn-prev.slider-buttons{
+    width: 5px;
+    margin-right: 5px;
+  }
+  .btn-next.slider-buttons{
+    width: 5px;
+    margin-right: 20px;
+  }
+  .wrapper-slider{
+    width: 300px;
+  }
+  .slider-item{
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 281px) {
+  .wrapper{
+    width: 250px;
+  }
+  .slider-item{
+    height: 150px;
+    width: 250px;
+  }
+  .arrow{
+    width: 13px;
+    height: 13px;
+    border-top: 2px solid rgb(255,213,11);
+    border-right: 2px solid rgb(255,213,11);
+  }
+  .btn-prev.slider-buttons{
+    width: 5px;
+    margin-right: 5px;
+  }
+  .btn-next.slider-buttons{
+    width: 5px;
+    margin-right: 20px;
+  }
+  .wrapper-slider{
+    height: 220px;
+    width: 265px;
+  }
+  .slider-item{
+    width: 250px;
+  }
+}чки flex бокса */
 .btn-prev{
   order: 1;
 }
