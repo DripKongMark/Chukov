@@ -141,7 +141,7 @@ a.button {
 }
 
 a.button:hover {
-    color: black;
+    color: white;
     background: rgb(164,224,236);
     /* rgb(221,203,142) */
     border-color: rgb(199, 155, 9);
@@ -231,15 +231,14 @@ html {
     right: 25px;
     width: 50px;
     height: 50px;
-    background: url(img/toP.jpg);
+    background: url(img/top.png);
     background-size: cover;
     z-index: 666;
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
-    border: 1mm ridge;
     border-color: rgb(229,159,81);
-    border-radius: 10px;
+    border-radius: 100px;
     -webkit-transition: all 0.5s ease;;
     -moz-transition: all 0.5s ease;;
     -o-transition: all 0.5s ease;;
