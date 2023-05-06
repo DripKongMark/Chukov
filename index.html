@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Moto sport</title>
+        <link rel="stylesheet" href="stale.css">
+        <meta name="viemport" content="width=divice-width, initial-scale=1">
+    </head>
+    <body>
+        <!--шапка сайта-->
+            <section class="intro">
+                <header>
+                    <h2>Motosport</h2>
+                        <nav class="nav">
+                            <ul class="nav-list">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Новости</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Поддержка</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"></a>
+                                </li>
+                            </ul>
+                        </nav>
+                           <!--<a href="#" class="menu-br">Войти</a>-->
+                        <!--Ввод с клавиатуры-->
+                        <button class="input" onclick="document.getElementById('id01').style.display='block'">Войти</button>
+                    <div id="id01" class="modal">
+                            <div class="container">
+                                <label for="uname"><b>Логинс</b></label>
+                                <input type="text" class="ctrl" value="заполните поля логин">
+                                <label for="psw"><b>Пароль</b></label>
+                                <input class="cbkh" type="text">
+                                <button class="cancelbtn">Войти</button>
+                            </div>
+                            <div class="out"></div>
+                            <div class="crl"></div>
+                            <div class="container-str">
+                                <button  type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Выйти</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--бургер меню-->
+                    <div class="menu-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu">
+                        <nav>
+                           <ul>
+                                <li>
+                                    <a href="#" class="menu-link">Галерея</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="menu-link">Галерея</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="menu-link">Новинки</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="menu-link">Поддержка</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+            </section>
+        <!--слайдер сайта-->
+        <section class="slider">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext-sl">1 / 3</div>
+                        <img src="slaider-3.jpg"  alt="" class="slider-picture">
+                    <div class="text">Caption One</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext-sl">2 / 3</div>
+                        <img src="slaider-1.jpg" class="slider-picture" alt="">
+                    <div class="text">Caption Two</div>
+                </div>
+      
+                <div class="mySlides fade">
+                    <div class="numbertext-sl">3 / 3</div>
+                        <img src="slaider-2.jpg" class="slider-picture" alt="">
+                    <div class="text">Caption Three</div>
+                </div>
+      
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+          <!--1 контеинер сайта-->
+        <section class="block">
+                <h3>Возникновения мотоспорта</h3>
+                <ul class="block-list">
+                    <li class="block-item">
+                        <img src="downi.jpg" alt="" class="picture">
+                    </li>
+                    <li class="block-item">
+                        <img src="dos.jpg" alt="" class="picture">
+                    </li>
+                    <li class="block-item">
+                        <img src="images.jpg" alt="" class="picture">
+                    </li>
+                </ul>
+                <div class="container-text">
+                    <p>Считаеться, что мотоспорт возник вместе с изобретением мотоцикла. В 1885 году Готтлиб Даймлер изобрел первую машину для
+                         верховой езды, а в 1887 году французская фирма  Дион-Бутон» наладила серийное производство мотоциклов.
+                        Организатором первых мотоциклетных гонок считается Автомобильный клуб Франции  (англ.)рус., учрежденный в 1895 г. Благодаря АКФ, Франция в течение многих лет оставалась центром мотоциклетного спорта, а отправной точкой соревнований долгое время являлся Париж.
+                        Несмотря на то, что первые официальные мотоциклетные гонки состоялись в Вене в 1899 году, окончательное разделение соревнований на автомобильные и мотоциклетные произошло только в начале 20 века.
+                    </p>
+                </div>
+        </section>
+        <!--второй контеинер сайта-->
+        <section class="block_two">
+                <h3>Эволюция мотоспорта</h3>
+                <ul class="block_two-list">
+                    <li class="block_two-item">
+                        <img src="ddrrss.jpg" alt="" class="bolck-picture">
+                        <h4>Эндуро</h4>
+                    </li>
+                    <li class="block_two-item">
+                        <img src="downih.jpg" alt="" class="bolck-picture">
+                        <h4>Спортивные</h4>
+                    </li>
+                    <li class="block_two-item">
+                        <img src="graund.jpg" alt="" class="bolck-picture">
+                        <h4>Дорожные</h4>
+                    </li>
+                </ul>
+                <div class="container-text">
+                    <p> Основным видом соревнований изначально оставались шоссейные гонки-пробеги на длинные дистанции. Однако, для зрителей они не вызывали особого интереса. Кроме того, эти гонки шли с «нейтрализацией», но даже это не исключало несчастных случаев во время соревнований. Для повышения зрелищности и популярности мотосоревнований начали проводиться мотогонки на ипподромах и велотреках, а затем и на специальных мототреках, которые были закрыты от пешеходов и общественного транспорта и могли проходить безостановочно.
+
+                        Кроме того, появляются специальные испытания мотоциклов в соревнованиях по подъёму на холм и шоссейно-линейных гонках на установление рекорда скорости. Возникновение новых видов соревнований стимулировало создание специальных спортивных и гоночных мотоциклов.
+                        
+                        Недостаточная зрелищность длинных шоссейных пробегов привела к возникновению шоссейно-кольцевых гонок. Прототипом гонки по замкнутому дорожному маршруту ограниченной длины с многократным прохождением круга стала серия гонок в бельгийских Арденнах, организованная Бельгийским Автомобильным Клубом в 1902 г.
+                    </p>
+                </div>
+                <div class="lavel">
+                    <a href="#" class="trs">читать дальше</a>
+                </div>
+        </section>
+       <!--Галерея-->
+       <section class="gallery">
+            <div class="gallery-container">
+                <span class="close-cursor" onclick="closeModal()">&times;</span>
+                <div class="gallery-item">
+                    <div class="numbertext">1 / 4</div>
+                        <img src="gallery-1.jpg"  alt="" class="gallery-scrin">
+                    <div class="text">Caption One</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="numbertext">2 / 4</div>
+                        <img src="gallery-2.jpg" class="gallery-scrin" alt="">
+                    <div class="text">Caption Two</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="numbertext">3 / 4</div>
+                        <img src="gallery-3.jpg" class="gallery-scrin" alt="">
+                    <div class="text">Caption Three</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="numbertext">4 / 4</div>
+                        <img src="gallery-4.jpg" class="gallery-scrin" alt="">
+                    <div class="text">Caption Four</div>
+                </div>
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>     
+            </div>
+            <div class="row" style="text-align: center;">
+                <div class="column">
+                    <img class="demo-cursor" src="gallery-1.jpg" onclick="currentGallery(1)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="gallery-2.jpg" onclick="currentGallery(2)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="gallery-3.jpg"  onclick="currentGallery(3)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="gallery-4.jpg"  onclick="currentGallery(4)">
+                </div>
+            </div>
+        </section>
+        <!--футер сайта-->
+        <section class="footer">
+                <footer>
+                    <div class="footer-list">
+                        <p>Подписывайся на группу в контате</p>
+                        <a href="#" class="vk">http://vk.com.</a>
+                    </div>
+                </footer>
+        </section>
+        <!--кнопка скрола-->
+        <button onclick="topFunction()" id="skroll">
+            <img class="scrollTop" src="scrol-ikon.png" alt="">
+        </button>
+        <script src="code.js"></script>
+    </body>
+</html>
