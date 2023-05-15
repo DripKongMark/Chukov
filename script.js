@@ -307,7 +307,7 @@ class ItcAccordion {
 	if(Tc.length===1) $("textarea").get(0).value += Tc;
   });
 
-var button_1, button_2, button_3, button_4;
+var button_1, button_2, button_3, button_4,button_5, button_6, button_7, button_8;
 
 function number_1(){
 	alert("Привет, я программа для сравнения чётности и нечётности чисел") //приветственное сообщение
@@ -395,11 +395,111 @@ b = parseFloat(b);
 		alert(`Значение функции у(х) = ${y}`);
 }
 
+function number_5(){
+	alert('Приветствую, пользователь, я программа для поиска чисел меньше исходного');
+	var N = 0;
+	N = +prompt('Введите длину массива');
+	N = parseInt(N);
+	var K = +prompt('Введите число');
+	K = parseInt(K);
+	var mass = [];
+	U = 0;
+	for (let i = 0; i < N; i++){
+		let R = Math.floor(Math.random() * 20);
+		mass.push(R);
+	}
+	alert('Ваш массив ' + mass);
+	for (let i = 0; i < N; i++){
+		if (mass[i] < K){
+			U++
+		}
+	}
+	if (U != 0){
+		alert('True')
+	} else{
+		alert('False')
+	}
+}
+
+function number_6(){
+	alert('Приветствую, пользователь, я программа для сложения чисел необходимое вам количество раз, при этом каждый раз увеличивая второе слогаемое');
+	var N = 0;
+	N = +prompt('Введите сколько необходимо раз складывать');
+	N = parseInt(N);
+	var S = 0;
+	S = parseInt(S);
+	var Y = 1;
+	Y = parseInt(Y);
+	for (let i = 0; i < N; i++){
+		S += 1 + Y;
+		Y++;
+	}
+	alert('Итог сложения: ' + S);
+}
+
+function number_7(){
+	alert('Приветствую, пользователь, я программа для вывода чётной позиции элементов вашего массива');
+	var N = 0;
+	N = +prompt('Введите массив чётной длины');
+	N = parseInt(N);
+	var A = [];
+	for (let i = 0; i < N; i++){
+		let R = Math.floor(Math.random() * 20);
+		A.push(R);
+	}
+	alert('Ваш массив ' + A);
+	var V = [];
+	for (let i = 1; i < N; i += 2){
+		V.push(A[i]);
+	}
+	alert('Чётные элементы массива: ' + V);
+}
+
+function number_8(){
+	alert('Приветствую, пользователь, я программа для нахождения и замены местами минимального и максимального числа в массиве');
+	var N = 0;
+	N = +prompt('Введите длину массива');
+	N = parseInt(N);
+	var mass = [];
+	for (let i = 0; i < N; i++){
+		let R = Math.floor(Math.random() * 20);
+		mass.push(R);
+	}
+	alert('Ваш массив ' + mass);
+	var MN = mass[0];
+	MN = parseInt(MN);
+	var IMN = 0;
+	IMN = parseInt(IMN);
+	var MX = mass[0];
+	MX = parseInt(MX);
+	var IMX = 0;
+	IMX = parseInt(IMX);
+	for (let i = 0; i < N; i++){
+		if (mass[i] < MN){
+			MN = mass[i];
+			IMN = i;
+		}
+		if (mass[i] > MX){
+			MX = mass[i];
+			IMX = i;
+		}
+	}
+	alert('Найден максимальный элемент массива ' + MX);
+	alert('Найден минимальный элемент массива ' + MN);
+	mass[IMX] = MN;
+	mass[IMN] = MX;
+	alert('Вид массива после изменнений ' + mass);
+}
+
 
 button_1 = document.getElementById('number_1');
 button_2 = document.getElementById('number_2');
 button_3 = document.getElementById('number_3');
 button_4 = document.getElementById('number_4');
+button_5 = document.getElementById('number_5');
+button_6 = document.getElementById('number_6');
+button_7 = document.getElementById('number_7');
+button_8 = document.getElementById('number_8');
 
 function table_add() {
 	var name = document.getElementById("fio_input"); // взяли html элемент по id
