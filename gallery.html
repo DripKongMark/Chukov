@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Chukov's Effect</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="gallery.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+  <div class="onTop" onclick="scrollTopTop()"></div>
+  <div class="navbar">
+    <div class="burger-menu__inner">
+        <span></span><span></span><span></span>
+      </div>
+    <div class="burger-menu">
+      <a href="index.html">Главная</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="interesting_facts.html">Интересные факты</a></li>
+      <a href="replies.html">Отзывы</a>
+      <a href="table.html">Таблица</a>
+      <a href="labi.html">Лабы</a>
+      <a href="mailto:gorbun.hog@gmail.ru">FAQ</a>
+      <a href="#" class="right">Войти</a>
+      </div>
+  </div>
+
+<div class="header">
+  <h1>Галерея Чукова</h1>
+  <p>Фотокарточки</p>
+</div>
+
+<div class="wrapper">
+  <!--залупный контейнер в котором кнопки и слайдер-->
+    <div class="wrapper-slider">
+      <!-- оболочка слайдер-->
+        <div class="slider-container">
+          <!--тело слайдера-->
+            <div class="slider-track">
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+            </div>
+        </div>
+        <!--мммм кнопочки-->
+        <button class="btn-prev slider-buttons"><div class="arrow arrow-left"></div></button>
+        <button class="btn-next slider-buttons"><div class="arrow arrow-right"></div></button>
+        
+    </div>    
+  </div>
+
+  <div class="gallerie">
+    <div class="photo-1"></div>
+    <div class="photo-2"></div>
+    <div class="photo-3"></div>
+    <div class="photo-4"></div>
+    <div class="photo-5"></div>
+    <div class="photo-6"></div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function(){
+      var scroll = document.querySelector('.onTop');
+      scroll.classList.toggle("active", window.scrollY>100)
+    })
+      function scrollTopTop(){
+        window.scrollTo({
+          top:0,
+          behavior:'smooth'
+        })
+      }
+  </script>
+
+<div class="footer">
+    <h2>All rights are reserved</h2>
+    <p>&copy; 2023 - Страница великого феномена</p>
+    <script src="script.js"></script>
+</div>
+
+   
+<script src='gallery.js'></script>
+</body>
+</html>

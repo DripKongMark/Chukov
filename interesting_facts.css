@@ -1,0 +1,50 @@
+.peoplereplies{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.body__replie{
+    display: flex;
+    flex-basis:content;
+    flex-wrap: wrap;
+}
+
+.text__replie{
+    height: auto;
+    max-width: 700px;
+    position: relative;
+    padding: 10px;
+    background: rgb(87,87,90);
+    /* rgb(51,51,51) */
+    border-radius: 10px;
+    vertical-align:bottom;
+    margin: 0 10px 10px 10px;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.first__replie{
+    justify-content: center;
+}
+
+.second__replie{
+    justify-content: center;
+}
+
+.third__replie{
+    justify-content: center;
+    
+}
+
+.fourth__replie{
+    justify-content: center;
+    
+}
+
+@media screen and (max-width: 706px) {
+    .text__replie{
+        margin: 10px;
+    }
+}
